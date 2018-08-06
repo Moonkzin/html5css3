@@ -1,0 +1,22 @@
+/*
+Em um css pode-se epedíficar que está alterandoi uma classse apenas dentor de uma classe pai,
+por exemplo: 
+
+.barra_superior .container{
+	margin: 100%;
+}
+
+neste exmeplo, o que passar para para o container .brra_superior,
+só acontecerá no escopo da barra_superior
+
+*/
+
+.barra_superior {
+	border-bottom: 1px solid black;
+}
+
+.container {
+	max-width: 960px; /*Dizendo que o tamanho máximo do container é 960 px, mas pode ser menos que isso*/
+	width: 100%; /* Dizendo que o width deve compreender 100% da tela, independente do tamanho*/
+	margin: 0 auto; /* Dizendo que o conteúdo do div deve ser centralizado dentro do container */
+}
