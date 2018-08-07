@@ -9,14 +9,82 @@ por exemplo:
 neste exmeplo, o que passar para para o container .brra_superior,
 só acontecerá no escopo da barra_superior
 
+para fontes, é sempre bom usar sans-serif para páginas na web 
+e para impressão serif;
+
+para por uma classe em uma tag, não precisa do ponto antes, por exemplo
+
+body {
+	atributo: valor;
+}
+
 */
 
+body {
+	margin: 0px; /* tirar as margens EXTERNAS de um elemnto */
+	font-family: sans-serif; /* fonte mais usada */
+}
+
+
+
 .barra_superior {
-	border-bottom: 1px solid black;
+	border-bottom: 1px solid rgb(204, 204, 204); /* extrutura da barra infior às informações */
+	color: rgb(187, 187, 187); /* cor das letras */
+	padding-top: 10px; /* margem interna à estrutura da aprte superior */
+	padding-bottom: 10px; /* margem interna à estrutura da parte inferior */
+	font-size: 14px; /* tamanho da letra */
 }
 
 .container {
 	max-width: 960px; /*Dizendo que o tamanho máximo do container é 960 px, mas pode ser menos que isso*/
 	width: 100%; /* Dizendo que o width deve compreender 100% da tela, independente do tamanho*/
 	margin: 0 auto; /* Dizendo que o conteúdo do div deve ser centralizado dentro do container */
+}
+
+nav { /* para passar tags, nao precisa de ponto */
+	color: rgb(187, 187, 187); /* cor do texto */
+	font-size: 12px; /* tamanho da letra */
+	float: right; /* informando que o menu nav deve flutuar à direita */
+	margin-top: 50px;
+}
+
+nav a { /* adcionando style na tag <a> dentro do menu <nav> */
+	color: rgb(187, 187, 187); /* tirando a cor azul dos links */
+	text-decoration: none; /* pata tirar o sublinhado dos links */
+}
+
+.btn_destaque { /* adcionando estilo à classe criada, portanto deve-se utilizar ponto antes */
+	background-color: rgb(255, 77, 77);  /* cor de fundo do botao */
+	color: white;  /* cor do texto do botao */
+	padding: 12px 40px;  /* estrutura interna do botao */
+	border-radius: 3px;  /* arredondamento das bordas do botão */
+	text-decoration: none;
+	font-size: 12px;
+}
+
+nav a.btn_destaque {  /* estilo da classe .btn_destaque dentro do nav a */
+	margin-left: 25px
+}
+
+.sec01 { /* id da primeira sessao */
+	color: white; /* cor do texto */
+	background-image: url(../img/bg_home.jpg); /* colocando imagem como brackground */
+	background-repeat: no-repeat; /* para que nao se repita a imagem de background */
+	background-position: center; /* para que a imagem de background fique no centro */
+	height: 540px; /* tamanho total da imagem */
+	width: 1320px;
+	
+}
+
+.sec01 p.titulo { /* configuracoes da tag <p> detro da class sec01, que está dentro da class titulo */
+	font-size: 48px;
+	padding-top: 100px;
+	color: black;
+}
+
+.sec01 p { /* configuracoes da tag <p> dentro da classe sec01 */
+	font-size: 24px;
+	padding-bottom: 30px;
+	line-height: 120%; /* espaçamentro entre as linhas */
+	color: black;
 }
