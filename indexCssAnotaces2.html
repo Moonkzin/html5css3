@@ -25,13 +25,14 @@
 		<div class="container">
 			<img alt="Logo do site" src="img/logo.jpg">
 			<nav>
-				Pagina Inicial | Produtos e Marcas |
+				Pagina Inicial | <a href="#marcas"> Produtos e Marcas </a> |
 				<a href="faleConosco.html"> Fale Conosco </a> |
 				<a class="btn_destaque" href="ondeEstamos.html">Onde estamos</a>
 			</nav>
 		</div>
 	</header>
-
+	<!--Para manter a separacao até em dispositivos móveis, usa-se o clearfix-->
+	<br class= "clearfix">
 	<section class="sec01">
 		<div class="container">
 			<p class="titulo">
@@ -45,7 +46,8 @@
 		</div>
 	</section>
 
-	<section class="sec02">
+	<a name="marcas" />
+	<section  class="sec02">
 		<div class="container">
 			<p> Trabalhamos com as melhores marcas de
 				<strong> lentes </strong>
@@ -80,17 +82,43 @@
 	<br class="clearfix">
 
 	<footer>
-		<div>
-			(logo) Nos oferecemos um servico completo apra sua visao (link redes sociais)
+		<div class="container">
+			<div class="um_terco">
+				<img class="logo" src="exemploCurso/Site 05/img/cruz.png" alt="logo qqr">
+				<p>
+					Nos oferecemos um servico completo apra sua visao (link redes sociais)
+				</p>
+				<a href="#">
+					<img src="exemploCurso/Site 05/img/logo_facebook.png" alt="">
+				</a>
+				<a href="#">
+					<img src="exemploCurso/Site 05/img/logo_instagram.png" alt="">
+				</a>
+				<a href="#">
+					<img src="exemploCurso/Site 05/img/Logo_Hellen.jpg" alt="">
+				</a>
+			</div>
+			<div class="um_terco">
+				<div class="margem_esquerda">
+					<h3> Links </h3>
+					Inicio <br>
+					<!-- Para fazer uma ancora, deve-se usar a tag <a> passar o href com um nome que queira "#qqrcoisa" 
+						depois criar uma tag <a name="qqrcoisa /> para ser redirecionado diretamente"-->
+					<a href="#marcas"> Marcas e Produtos </a> <br>
+					Falo Conosco Marcas <br>
+				</div>
+			</div>
+			<div class="um_terco">
+				<h3> Contato </h3>
+				Endereço: kkkkkk Telefone: 9999999 Email: kkkk@kk.com
+			</div>
 		</div>
-		<div>
-			Links Inicio Marcas e Produtos Falo Conosco Marcas
-		</div>
-		<div>
-			Contato Endereço: kkkkkk Telefone: 9999999 Email: kkkk@kk.com
-		</div>
-		<div>
-			Todos os direitos reservados (@) 2018 Termos de uso e política de privacidade
+
+		<br class="clearfix">
+		<div class="direitos_reservados">
+			Todos os direitos reservados (@) 2018
+			<a href="#"> Termos de uso </a> e
+			<a href="#"> política de privacidade </a>
 		</div>
 	</footer>
 

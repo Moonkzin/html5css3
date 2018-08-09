@@ -44,6 +44,14 @@ body {
 	margin: 0 auto; /* Dizendo que o conteúdo do div deve ser centralizado dentro do container */
 }
 
+/* @media é usado apra fazer a separação das telas, passando a palavra screen, depois and (condição)
+dessa forma,  a margen s[o será atendida quando a codição for true */
+@media screen and (max-width: 560px){
+	.barra_superior .container {
+		margin-left: 10px;
+	}
+}
+
 nav { /* para passar tags, nao precisa de ponto */
 	color: rgb(187, 187, 187); /* cor do texto */
 	font-size: 12px; /* tamanho da letra */
@@ -126,4 +134,40 @@ nav a.btn_destaque {  /* estilo da classe .btn_destaque dentro do nav a */
 home2 {
 	background-image: url(../img/bg_home.jpg);
 	height: 664px;
+}
+
+.direitos_reservados { /* usado no rodapé do site */
+	background-color: rgb(255, 77, 77);
+	color: white;
+	padding-top: 45px;
+	padding-bottom: 45px;
+	text-align: center;
+}
+
+.direitos_reservados a { /* mudando a cor dos links */
+	color: white;
+}
+
+.um_terco { /* criando um teco na aprte rodapé */
+	float: left;
+	width: 33%;
+	text-decoration: none;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.um_terco, .um_terco a { /* passando todos os textos e links de uma vez */
+	color: rgb(136, 136, 136);
+	text-decoration: none;
+}
+
+.um_terco .logo { /* dizedo que toda classe .logo dentro de .um_terco, tera tamanho de 100%*/
+	width: 100%
+}
+
+.um_terco img {
+	width: 35px;
+}
+
+.margem_esquerda {
+	margin-left: 35px;
 }
